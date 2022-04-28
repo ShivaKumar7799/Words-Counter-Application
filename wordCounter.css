@@ -1,0 +1,71 @@
+.container{
+  display: flex;
+  height: 97vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+}
+textarea{
+  width: 800px;
+  height: 300px;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 5px;
+  letter-spacing: 0px;
+  word-spacing: 1px;
+}
+p{
+  margin: 3px ;
+  text-align: center;
+  font-size: 20px;
+}
+#countDisplay{
+  margin: 30px 0px;
+  position: relative;
+}
+button{
+  position: absolute;
+  top: 5px;
+  right: -120px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+button:hover{
+  background-color: red;
+  color: white;
+  border: none;
+}
+@media screen and (min-width : 350px) {
+  textarea{
+    width: 300px;
+  }
+}
+@media screen and (min-width : 576px) {
+     textarea{
+       width: 500px;
+     }
+    p{
+      font-size: 20px;
+    }
+  }
+@media screen and (min-width : 900px) {
+  textarea{
+    width: 700px;
+  }
+  p{
+    font-size: 20px;
+  }
+}
+@media screen and (min-width : 1200px) {
+  textarea{
+    width: 1100px;
+  }
+  p{
+    font-size: 22px;
+  }
+}
