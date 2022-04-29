@@ -1,6 +1,5 @@
 .container{
   display: flex;
-  height: 97vh;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -44,6 +43,10 @@ button:hover{
   textarea{
     width: 300px;
   }
+  button{
+    position: absolute;
+    margin-right: 30px;
+  }
 }
 @media screen and (min-width : 576px) {
      textarea{
@@ -51,6 +54,11 @@ button:hover{
      }
     p{
       font-size: 20px;
+    }
+    button{
+      position: relative;
+      top: -110px;
+      left: 200px;
     }
   }
 @media screen and (min-width : 900px) {
@@ -60,6 +68,11 @@ button:hover{
   p{
     font-size: 20px;
   }
+  button{
+    position: relative;
+    top: -110px;
+    left: 300px;
+  }
 }
 @media screen and (min-width : 1200px) {
   textarea{
@@ -67,5 +80,10 @@ button:hover{
   }
   p{
     font-size: 22px;
+  }
+  button{
+    position: relative;
+    top: -120px;
+    left: 450px;
   }
 }
