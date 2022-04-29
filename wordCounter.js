@@ -29,7 +29,7 @@ function countWords(){
   let newWordArr = [];
   newWordArr = wordArr.filter((item) => item != "");
   words = newWordArr.length;
-  wordsId.innerHTML = `Words = ${words}`
+  wordsId.innerHTML = `Words : ${words}`
 
   // Sentences Count
   let sentenceText = text.replace(/\n/g," ")
@@ -43,7 +43,7 @@ function countWords(){
         sentence +=1
       } 
   }
-  sentenceId.innerHTML = `Sentence : ${sentence}`;
+  sentenceId.innerHTML = `Sentences : ${sentence}`;
   
     //Paragraphs Count
     let paragraph = text.match(/\n/g);
@@ -65,6 +65,6 @@ function resetText(){
   document.getElementById('text').value = null;
   charactersId.innerHTML = `Characters : 0`;
   wordsId.innerHTML = `Words : 0`;
-  sentenceId.innerHTML = `Sentence : 0`;
-  paragraphId.innerHTML = `Paragraph : 0`
+  sentenceId.innerHTML = `Sentences : 0`;
+  paragraphId.innerHTML = `Paragraphs : 0`
 }
